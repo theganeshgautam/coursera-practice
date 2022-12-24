@@ -1,0 +1,80 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.heading0 {
+  margin-top: 15px;
+  font-size: 175%;
+  text-align: center;
+}
+
+.main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 15px 0px 0px 15px;
+}
+
+.container {
+  border: 3px solid black;
+  background-color: gray;
+  color: black;
+  margin-right: 15px;
+  position: relative;
+}
+
+.heading {
+  float: right;
+  padding: 1px 20px;
+  margin: -3px -3px 0px ;
+  border: 3px solid black;
+  font-size: 125%;
+}
+
+.heading1 {
+  background-color: rgb(215, 127, 127);
+}
+.heading2 {
+  background-color: rgb(185, 66, 66);
+}
+.heading3 {
+  background-color: bisque;
+}
+
+div > p {
+  clear: right;
+  padding: 8px;
+}
+
+
+@media screen and (min-width:992px) {
+  .main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 15px 0px 0px 15px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+  .main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 15px 0px 0px 15px;
+    row-gap: 15px;
+  }
+  .container3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .main{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 15px 0px 0px 15px;
+    row-gap:15px;
+  } 
+}
